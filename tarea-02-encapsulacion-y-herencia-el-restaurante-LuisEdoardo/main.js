@@ -116,7 +116,7 @@ export default class Main {
         })
         let elementoPedido2 = new ElementoPedido({
             cantidad:3,
-            producto: new Producto("Filete Mignon", new Precio(200))
+            producto: new Producto("Tomahawk", new Precio(200))
         })
         console.log("-------Pedido-------")
         pedido1.agregarElemento(elementoPedido1)
@@ -141,7 +141,7 @@ export default class Main {
         })
         let elementoPedido2 = new ElementoPedido({
             cantidad:4,
-            producto: new Producto("Filete Mignon", new Precio(200))
+            producto: new Producto("Tomahawk", new Precio(200))
         })
         let pedido1 = new Pedido({
             numeroPedido: 1,
