@@ -1,20 +1,20 @@
 export default class Direccion {
 
     constructor(calle,numExt,numInt,colonia,CP,municipio,ciudad){
-        this.calle = calle;
-        this.numExt = numExt;
-        this.numInt = numInt;
-        this.colonia = colonia;
-        this.CP = CP;
-        this.ciudad = ciudad;
-        this.municipio = municipio;
+        this._calle = calle;
+        this._numExt = numExt;
+        this._numInt = numInt;
+        this._colonia = colonia;
+        this._CP = CP;
+        this._ciudad = ciudad;
+        this._municipio = municipio;
     }
 
     getFormatoCorto(){
-        return `${this.calle} ${this.numExt}`
+        return `${this._calle} ${this._numExt}`
     }
 
     getFormatoExtendido(){
-        return `${this.calle} ${this.numExt}, ${this.numInt}, ${this.colonia}, ${this.CP}, ${this.municipio}, ${this.ciudad}`
+        return `${this._calle} ${this._numExt}, ${this._numInt}, ${this._colonia}, ${this._CP}, ${this._municipio}, ${this._ciudad}`
     }
 }

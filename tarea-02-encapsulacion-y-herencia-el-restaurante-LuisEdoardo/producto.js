@@ -1,11 +1,11 @@
 export default class Producto{
 
     constructor(nombre,precio){
-        this.nombreP = nombre;
-        this.precio = precio;
+        this._nombreP = nombre;
+        this._precio = precio;
     }
 
     getDescripcion(){
-        return `${this.nombreP} ${this.precio.getPrecio()}`
+        return `${this._nombreP} ${this._precio.getPrecio()}`
     }
 }

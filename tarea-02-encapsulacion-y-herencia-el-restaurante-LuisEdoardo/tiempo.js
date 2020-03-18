@@ -1,22 +1,22 @@
 export default class Tiempo {
    
     constructor(hora, minutos, periodos) {
-        this.hora = hora;
-        this.minutos = minutos;
-        this.periodos = periodos.toLowerCase();
+        this._hora = hora;
+        this._minutos = minutos;
+        this._periodos = periodos.toLowerCase();
         
     }
 
     getFormato12(){
-        return `${this.hora}:${this.minutos} ${this.periodos}`
+        return `${this._hora}:${this._minutos} ${this._periodos}`
     }
 
     getFormato24(){
-        if (this.periodos == "pm"){
-            let masHora = this.hora + 12
-                return `${masHora}:${this.minutos}`
+        if (this._periodos == "pm"){
+            let masHora = this._hora + 12
+                return `${masHora}:${this._minutos}`
         }  else {
-                return `${this.hora}:${this.minutos}`
+                return `${this.hora}:${this._minutos}`
         }
     }
 
